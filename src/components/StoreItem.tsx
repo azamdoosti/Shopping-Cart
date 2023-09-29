@@ -1,4 +1,5 @@
 import { Card } from "react-bootstrap";
+import formatCurrency from "../utilities/formatCurrency";
 
 interface StoreItemProps {
   id: number;
@@ -19,11 +20,11 @@ const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
         />
         <Card.Body className="d-felx flex-column">
           <Card.Title
-            className="d-fles justify-content-space-between
+            className="d-fles justify-content -between
             align-items-baseline mb-4"
           >
             <span className="fs-2">{name}</span>
-            <span className="ms-2 text-muted">{price}</span>
+            <span className="ms-2 text-muted">{formatCurrency(price)}</span>
           </Card.Title>
         </Card.Body>
       </Card>
