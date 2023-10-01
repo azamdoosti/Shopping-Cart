@@ -4,9 +4,8 @@ import Home from "./pages/Home";
 import Store from "./pages/Store";
 import About from "./pages/About";
 import NavBar from "./components/NavBar";
-import { ShoppingCartProviderProps } from "./context";
 
-function App() {
+export function App() {
   return (
     <ShoppingCartProviderProps>
       <NavBar />
@@ -20,5 +19,3 @@ function App() {
     </ShoppingCartProviderProps>
   );
 }
-
-export default App;
